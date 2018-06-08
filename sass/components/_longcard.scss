@@ -1,0 +1,29 @@
+.longcard{
+    background:rgba(0,0,0,0.005);
+    border:1px solid rgba(0,0,0,0.023);
+    box-shadow:4px 4px 10px rgba(0,0,0,0.033);
+    padding:2rem 2rem 3.5rem 2rem;
+    // min-height:630px;
+    &__img{
+        width:100%;
+        background-size:cover;
+        // padding-bottom:10%;
+
+        // background-color:#191919;
+    }
+
+    &__title{
+        margin-top:1.5rem;
+        letter-spacing:-0.5px;
+        font-size:2rem;
+    }
+
+    &__text{
+        margin-top:2rem;
+        &--tech{
+            font-weight:300;
+            // font-style: italic;
+        }
+    }
+
+}

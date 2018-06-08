@@ -1,0 +1,23 @@
+{
+  "name": "mikes-portfolio-site",
+  "version": "1.0.0",
+  "description": "Michael Avnyin's portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "start:server": "live-server"
+  },
+  "keywords": [
+    "portfolio",
+    "code",
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Michael Avnyin",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.9.0"
+  }
+}

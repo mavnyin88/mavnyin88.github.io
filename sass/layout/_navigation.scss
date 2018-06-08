@@ -1,0 +1,24 @@
+.navigation{
+    position:absolute;
+    top:55px;
+    right:50px;
+    z-index:99;
+
+    &__list{
+        font-weight:100;
+        list-style: none;
+        text-transform:uppercase;
+        letter-spacing:3px;
+    }
+
+    &__item{
+        display:inline-block;
+        &:not(:last-child){
+            padding-right:20px;
+        }
+        a{
+            color:#FFF;
+        }
+    }
+    
+}
