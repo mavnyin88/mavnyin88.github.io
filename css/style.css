@@ -245,6 +245,9 @@ h6 {
   top: 55px;
   right: 50px;
   z-index: 99; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation {
+      top: 37px; } }
   .navigation__list {
     font-weight: 100;
     list-style: none;
@@ -254,8 +257,15 @@ h6 {
     display: inline-block; }
     .navigation__item:not(:last-child) {
       padding-right: 20px; }
+      @media only screen and (max-width: 37.5em) {
+        .navigation__item:not(:last-child) {
+          padding-right: 0;
+          padding-bottom: 0.5rem; } }
     .navigation__item a {
       color: #FFF; }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__item {
+        display: block; } }
 
 .work a {
   display: block;

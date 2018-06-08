@@ -4,6 +4,10 @@
     right:50px;
     z-index:99;
 
+    @include respond(phone){
+        top:37px;
+    }
+
     &__list{
         font-weight:100;
         list-style: none;
@@ -15,9 +19,16 @@
         display:inline-block;
         &:not(:last-child){
             padding-right:20px;
+            @include respond(phone){
+                padding-right:0;
+                padding-bottom:0.5rem;
+            }
         }
         a{
             color:#FFF;
+        }
+        @include respond(phone){
+            display:block;
         }
     }
     
