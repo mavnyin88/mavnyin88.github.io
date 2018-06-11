@@ -8,9 +8,13 @@
 }
 
 .u-section-heading{
-    padding-top:80px;
-    padding-bottom:50px;
+    padding-top:8rem;
+    padding-bottom:5rem;
     font-weight:700;
     letter-spacing:-2px;
     text-align:center;
+    @include respond(phone){
+        padding-top:4rem;
+        padding-bottom:4rem;
+    }
 }

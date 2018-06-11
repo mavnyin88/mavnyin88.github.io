@@ -6,6 +6,10 @@
     height:90vh;
     background:#191919;
 
+    @include respond(phone){
+        height:80vh;
+    }
+
     &__hero-container{
         @include center-transform;
         width:550px;
@@ -19,8 +23,8 @@
 
     &__logo{
         position:absolute;
-        top:20px;
-        left:20px;
+        top:2rem;
+        left:2rem;
     }
 
     &__img{
@@ -28,8 +32,7 @@
     }
 
     &__text{
-        margin-top:20px;
-        opacity:0.88;
+        margin-top:2rem;
         text-align:center;
     }
 

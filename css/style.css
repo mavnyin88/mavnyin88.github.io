@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.1rem; }
 
 p {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.8; }
 
@@ -84,14 +84,21 @@ h6 {
 
 .heading-primary__main {
   font-size: 91px;
-  line-height: 91px;
-  opacity: 0.88; }
+  line-height: 91px; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary__main {
+      font-size: 71px;
+      line-height: 71px; } }
 
 .heading-primary__img {
   border-radius: 500px;
   width: 85px;
   height: 85px;
   margin: 2px 10px 0 0; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary__img {
+      width: 65px;
+      height: 65px; } }
 
 .u-padding-20 {
   padding: 2rem; }
@@ -101,11 +108,15 @@ h6 {
   justify-content: center; }
 
 .u-section-heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
   font-weight: 700;
   letter-spacing: -2px;
   text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .u-section-heading {
+      padding-top: 4rem;
+      padding-bottom: 4rem; } }
 
 .longcard {
   background: rgba(0, 0, 0, 0.005);
@@ -122,7 +133,7 @@ h6 {
   .longcard__text {
     margin-top: 2rem; }
     .longcard__text--tech {
-      font-weight: 300; }
+      font-weight: 400; }
 
 .smallcard {
   border: 1px solid rgba(26, 26, 26, 0.05);
@@ -155,20 +166,12 @@ h6 {
       letter-spacing: 2px;
       font-size: 1.2rem;
       font-family: georgia; }
-  .footer__sun {
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    color: #e8d820;
-    position: absolute;
-    left: 300px;
-    top: 300px; }
 
 .social-badges {
   color: white;
-  font-size: 30px; }
+  font-size: 3.3rem; }
   .social-badges__item {
-    margin: 0 1px 0 1px; }
+    margin: 0 0.1rem 0 0.1rem; }
 
 .row {
   max-width: 114rem;
@@ -217,6 +220,9 @@ h6 {
   width: 100%;
   height: 90vh;
   background: #191919; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      height: 80vh; } }
   .header__hero-container {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -231,41 +237,65 @@ h6 {
         padding: 2rem; } }
   .header__logo {
     position: absolute;
-    top: 20px;
-    left: 20px; }
+    top: 2rem;
+    left: 2rem; }
   .header__img {
     width: 70px; }
   .header__text {
-    margin-top: 20px;
-    opacity: 0.88;
+    margin-top: 2rem;
     text-align: center; }
 
 .navigation {
   position: absolute;
-  top: 55px;
-  right: 50px;
+  top: 5.6rem;
+  right: 5rem;
   z-index: 99; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation {
+      top: 5rem; } }
+  @media only screen and (max-width: 75em) {
+    .navigation {
+      top: 6rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation {
-      top: 37px; } }
+      top: 4rem;
+      right: 4rem; } }
   .navigation__list {
-    font-weight: 100;
+    font-weight: 300;
     list-style: none;
     text-transform: uppercase;
     letter-spacing: 3px; }
   .navigation__item {
     display: inline-block; }
-    .navigation__item:not(:last-child) {
-      padding-right: 20px; }
-      @media only screen and (max-width: 37.5em) {
-        .navigation__item:not(:last-child) {
-          padding-right: 0;
-          padding-bottom: 0.5rem; } }
-    .navigation__item a {
-      color: #FFF; }
     @media only screen and (max-width: 37.5em) {
       .navigation__item {
         display: block; } }
+    .navigation__item:not(:last-child) {
+      padding-right: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .navigation__item:not(:last-child) {
+          padding-right: 0;
+          padding-bottom: 1rem; } }
+    .navigation__item a {
+      position: relative;
+      color: #FFF; }
+      .navigation__item a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 50%;
+        left: 0;
+        background-color: #FFF;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s; }
+      .navigation__item a:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1); }
 
 .work a {
   display: block;

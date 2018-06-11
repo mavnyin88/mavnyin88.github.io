@@ -18,23 +18,13 @@
             font-family:georgia;
         }
     }
-
-    &__sun{
-        width:300px;
-        height:300px;
-        border-radius:100%;
-        color:#e8d820;
-        position: absolute;
-        left:300px;
-        top:300px;
-    }
 }
 
 .social-badges{
     color: white;
-    font-size: 30px;
+    font-size: 3.3rem;
     
     &__item{
-        margin: 0 1px 0 1px;
+        margin: 0 0.1rem 0 0.1rem;
     }
 }
