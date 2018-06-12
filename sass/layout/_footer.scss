@@ -21,10 +21,13 @@
 }
 
 .social-badges{
-    color: white;
     font-size: 3.3rem;
     
     &__item{
         margin: 0 0.1rem 0 0.1rem;
+    }
+
+    a{
+        color: #FFF;
     }
 }

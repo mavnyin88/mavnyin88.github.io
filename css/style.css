@@ -168,10 +168,11 @@ h6 {
       font-family: georgia; }
 
 .social-badges {
-  color: white;
   font-size: 3.3rem; }
   .social-badges__item {
     margin: 0 0.1rem 0 0.1rem; }
+  .social-badges a {
+    color: #FFF; }
 
 .row {
   max-width: 114rem;
