@@ -131,6 +131,7 @@ h6 {
     letter-spacing: -0.5px;
     font-size: 2rem; }
   .longcard__text {
+    text-align: justify;
     margin-top: 2rem; }
     .longcard__text--tech {
       font-weight: 400; }
@@ -148,6 +149,7 @@ h6 {
   .smallcard__tech-text {
     margin-top: 0.5rem; }
   .smallcard__text {
+    text-align: justify;
     margin-top: 1.5rem; }
 
 .footer {
@@ -244,7 +246,7 @@ h6 {
     width: 70px; }
   .header__text {
     margin-top: 2rem;
-    text-align: center; }
+    text-align: justify; }
 
 .navigation {
   position: absolute;
