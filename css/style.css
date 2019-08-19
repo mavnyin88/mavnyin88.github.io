@@ -237,7 +237,7 @@ h6 {
     @media only screen and (max-width: 37.5em) {
       .header__hero-container {
         width: 80%;
-        padding: 2rem;
+        padding: 2rem 0;
         top: 50%; } }
   .header__logo {
     position: absolute;
