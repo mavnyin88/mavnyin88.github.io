@@ -233,11 +233,12 @@ h6 {
     top: 50%;
     width: 550px;
     top: 47%;
-    color: #FFF; }
+    color: #fff; }
     @media only screen and (max-width: 37.5em) {
       .header__hero-container {
         width: 80%;
-        padding: 2rem; } }
+        padding: 2rem;
+        top: 50%; } }
   .header__logo {
     position: absolute;
     top: 2rem;
